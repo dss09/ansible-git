@@ -42,6 +42,7 @@ Host *\n\
 
 COPY entrypoint /usr/local/bin/
 ADD vault-env /bin/vault-env
+RUN chmod +x /bin/vault-env
 
 WORKDIR /ansible
 

@@ -27,6 +27,7 @@ RUN apk --update add --virtual \
  && pip3 install \
         ansible==${ANSIBLE_VERSION} \
         ansible-lint==${ANSIBLE_LINT_VERSION} \
+        boto3 \
  && apk del \
         .build-deps \
  && rm -rf /var/cache/apk/*
